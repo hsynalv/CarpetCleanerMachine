@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83809EE3-44C3-4CC3-97FF-8291288D48A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UserInterfaces</RootNamespace>
+    <AssemblyName>UserInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DigerFormlar\LogKayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\LogKayitlari.Designer.cs">
+      <DependentUpon>LogKayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerFormlar\Makineler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\Makineler.Designer.cs">
+      <DependentUpon>Makineler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerFormlar\SevkMakineler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\SevkMakineler.Designer.cs">
+      <DependentUpon>SevkMakineler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerFormlar\SiparisGir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\SiparisGir.Designer.cs">
+      <DependentUpon>SiparisGir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerFormlar\StokMakineler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\StokMakineler.Designer.cs">
+      <DependentUpon>StokMakineler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Makine Ekle\MecMakineEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Makine Ekle\MecMakineEkle.Designer.cs">
+      <DependentUpon>MecMakineEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Makine Ekle\OtomatikYikamaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Makine Ekle\OtomatikYikamaEkle.Designer.cs">
+      <DependentUpon>OtomatikYikamaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Makine Ekle\PaketlemeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Makine Ekle\PaketlemeEkle.Designer.cs">
+      <DependentUpon>PaketlemeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Makine Ekle\SikmaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Makine Ekle\SikmaEkle.Designer.cs">
+      <DependentUpon>SikmaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Makine Ekle\TozCırpmaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Makine Ekle\TozCırpmaEkle.Designer.cs">
+      <DependentUpon>TozCırpmaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerFormlar\MakineGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\MakineGor.Designer.cs">
+      <DependentUpon>MakineGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler\MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler\MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler\MusteriGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler\MusteriGor.Designer.cs">
+      <DependentUpon>MusteriGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DigerFormlar\YetkiliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerFormlar\YetkiliGiris.Designer.cs">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\PersonelAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\PersonelAyarlari.Designer.cs">
+      <DependentUpon>PersonelAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yönetici\YoneticiAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yönetici\YoneticiAyarlari.Designer.cs">
+      <DependentUpon>YoneticiAyarlari.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DigerFormlar\LogKayitlari.resx">
+      <DependentUpon>LogKayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerFormlar\Makineler.resx">
+      <DependentUpon>Makineler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerFormlar\SevkMakineler.resx">
+      <DependentUpon>SevkMakineler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerFormlar\SiparisGir.resx">
+      <DependentUpon>SiparisGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerFormlar\StokMakineler.resx">
+      <DependentUpon>StokMakineler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Makine Ekle\MecMakineEkle.resx">
+      <DependentUpon>MecMakineEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Makine Ekle\OtomatikYikamaEkle.resx">
+      <DependentUpon>OtomatikYikamaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Makine Ekle\PaketlemeEkle.resx">
+      <DependentUpon>PaketlemeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Makine Ekle\SikmaEkle.resx">
+      <DependentUpon>SikmaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Makine Ekle\TozCırpmaEkle.resx">
+      <DependentUpon>TozCırpmaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerFormlar\MakineGor.resx">
+      <DependentUpon>MakineGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler\MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler\MusteriGor.resx">
+      <DependentUpon>MusteriGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DigerFormlar\YetkiliGiris.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\PersonelAyarlari.resx">
+      <DependentUpon>PersonelAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yönetici\YoneticiAyarlari.resx">
+      <DependentUpon>YoneticiAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{d79384ca-e7f6-4eec-b124-0f1ed311cbb1}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseLogicLayer\DatabaseLogicLayer.csproj">
+      <Project>{0806030e-3af9-4896-9710-aac0e4b416de}</Project>
+      <Name>DatabaseLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entites\Entites.csproj">
+      <Project>{3be16e03-1deb-4974-91d7-da180ee9447e}</Project>
+      <Name>Entites</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
